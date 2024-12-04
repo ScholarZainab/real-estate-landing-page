@@ -1,103 +1,42 @@
-/* General Styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Section */
-.header {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  background-image: url('images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hero-content h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-content .cta-btn {
-  background-color: #007BFF;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero-content .cta-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Property Listing Section */
-.property-listing {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+.property-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .property-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .property-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
 }
 
-.premium .premium-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: gold;
-  color: black;
-  padding: 5px;
-  font-weight: bold;
-  border-radius: 5px;
+.property-card h3 {
+    margin: 10px 0;
+    color: #333;
 }
 
-/* Footer Section */
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
+.property-card p {
+    color: #555;
 }
-
