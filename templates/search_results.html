@@ -1,0 +1,10 @@
+<div class="property-card">
+    <img src="{{ property.image_url }}" alt="Property Image">
+    <h3>{{ property.title }}</h3>
+    <p>{{ property.location }}</p>
+    <p>${{ property.price }}</p>
+    <p>{{ property.description }}</p>
+    {% if property.is_premium %}
+        <span class="badge {{ property.premium_category.lower() }}">{{ property.premium_category }}</span>
+    {% endif %}
+</div>

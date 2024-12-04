@@ -1,0 +1,13 @@
+<form action="/register_property" method="POST">
+    <input type="text" name="title" placeholder="Property Title" required>
+    <input type="text" name="location" placeholder="Location" required>
+    <input type="number" name="price" placeholder="Price" required>
+    <textarea name="description" placeholder="Description" required></textarea>
+    <label for="premium-category">Premium Category:</label>
+    <select name="premium_category" id="premium-category">
+        <option value="Standard">Standard</option>
+        <option value="Gold">Gold ($30/month)</option>
+        <option value="Platinum">Platinum ($50/month)</option>
+    </select>
+    <button type="submit">Register Property</button>
+</form>
