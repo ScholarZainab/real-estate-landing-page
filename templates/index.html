@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>EliteHaven</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
         <h1>Welcome to EliteHaven</h1>
     </header>
-    <section class="property-list">
-        <div class="property-card">
-            <img src="{{ url_for('static', filename='images/property1.jpg') }}" alt="Luxury Villa">
-            <h3>Luxury Villa</h3>
-            <p>Beautiful villa with ocean view.</p>
-        </div>
-        <div class="property-card">
-            <img src="{{ url_for('static', filename='images/property2.jpg') }}" alt="Modern Apartment">
-            <h3>Modern Apartment</h3>
-            <p>Stylish apartment in the city center.</p>
-        </div>
-    </section>
+    <main>
+        <section class="property-list">
+            <div class="property-card">
+                <img src="{{ url_for('static', filename='images/property1.jpg') }}" alt="Luxury Villa">
+                <h3>Luxury Villa</h3>
+                <p>A beautiful villa with ocean views.</p>
+            </div>
+            <div class="property-card">
+                <img src="{{ url_for('static', filename='images/property2.jpg') }}" alt="Modern Apartment">
+                <h3>Modern Apartment</h3>
+                <p>Stylish apartment in the heart of the city.</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
